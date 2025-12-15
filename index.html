@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gnani.ai Live Demo</title>
+  <meta name="description" content="Experience a live AI agent built for your industry. Select an industry and use case, then receive a live AI call." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="hero-left">
+        <div class="badge">Live AI Experience</div>
+        <h1>Experience a live AI agent built for your industry.</h1>
+        <p class="sub">Choose an industry and a use case. Get a live AI call in seconds.</p>
+
+        <div class="proof">
+          <div class="proof-item">
+            <div class="proof-kpi">Enterprise-ready</div>
+            <div class="proof-sub">Secure orchestration. Audit logs. Rate limits.</div>
+          </div>
+          <div class="proof-item">
+            <div class="proof-kpi">Fast</div>
+            <div class="proof-sub">No page reloads. No long forms.</div>
+          </div>
+          <div class="proof-item">
+            <div class="proof-kpi">Credible</div>
+            <div class="proof-sub">Pre-built workflows per industry.</div>
+          </div>
+        </div>
+
+        <div class="mini-note">
+          Tip: embed this widget in your main homepage hero, or host it at <span class="mono">demos.gnani.ai</span>.
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="card" id="experience-card" aria-live="polite">
+          <div class="card-top">
+            <div class="stepper" aria-label="Progress">
+              <div class="step" id="step-1"><span class="dot"></span><span class="label">Industry</span></div>
+              <div class="step" id="step-2"><span class="dot"></span><span class="label">Use case</span></div>
+              <div class="step" id="step-3"><span class="dot"></span><span class="label">Call</span></div>
+            </div>
+            <button class="ghost" id="resetBtn" type="button">Reset</button>
+          </div>
+
+          <!-- Screen container -->
+          <div id="screen" class="screen"></div>
+
+          <div class="card-bottom">
+            <div class="small muted" id="footerHint">
+              Instant call. No spam. No sales pitch.
+            </div>
+            <div class="small muted" id="securityHint">
+              Protected by rate limits and abuse prevention.
+            </div>
+          </div>
+        </div>
+
+        <div class="legal">
+          By continuing, you confirm you are authorized to receive a call at the provided number.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
